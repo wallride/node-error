@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "sourceMap": false,
+    "declaration": false,
+    "rootDir": "./src",
+    "outDir": "./build",
+    "typeRoots": ["../node_modules/@types"]
+  }
+}

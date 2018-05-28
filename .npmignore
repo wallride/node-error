@@ -1,0 +1,10 @@
+.idea
+src
+tests
+typings
+tsconfig.json
+tsd.json
+gulpfile.js
+build/**/*.d.ts
+!build/module.d.ts
+package-lock.json

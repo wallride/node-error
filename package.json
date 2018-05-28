@@ -1,0 +1,46 @@
+{
+  "name": "wallride-node-error",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=7.2.0"
+  },
+  "description": "Structured and nested errors for node.js",
+  "main": "./build/index.js",
+  "scripts": {
+    "install-dev-deps": "npm i gulp gulp-typescript merge2 mocha typescript@next dts-bundle through2 --save-dev",
+    "pretest": "rm -rf ./tests/build && cd ./tests && gulp && cd ..",
+    "test": "mocha ./tests/build/index",
+    "build": "rm -rf ./build && gulp",
+    "prepublish": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wallride/node-error.git"
+  },
+  "keywords": [
+    "Error"
+  ],
+  "typings": "./build/module.d.ts",
+  "typescript": {
+    "definition": "./build/module.d.ts"
+  },
+  "author": "Ivan Pesochenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wallride/node-error/issues"
+  },
+  "homepage": "https://github.com/wallride/node-error#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^10.1.3",
+    "chai": "^4.1.2",
+    "dts-bundle": "^0.4.3",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.2.4",
+    "merge2": "^1.2.1",
+    "mocha": "^2.5.3",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {}
+}
